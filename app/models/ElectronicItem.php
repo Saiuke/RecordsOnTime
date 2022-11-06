@@ -15,7 +15,7 @@ abstract class ElectronicItem
     private ElectronicItemType $type;
     private string $description;
     private int $price;
-    private array $extras = array();
+    private array $extras;
     private int $maxExtras;
 
     /**
