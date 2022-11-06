@@ -27,11 +27,9 @@ class ShopController
      */
     public function addItems(array $productsToAdd): void
     {
-        foreach ($productsToAdd as $product) {
-            if ($product instanceof ElectronicItem) {
-                $this->cart[] = $product;
-            }
-        }
+        $this->cart = array_map(function ($product) {
+            return $product instanceof ElectronicItem ? $product : null;
+        }, $productsToAdd);
     }
 
     /**
