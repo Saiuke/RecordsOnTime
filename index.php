@@ -46,6 +46,10 @@
             text-align: center;
         }
 
+        .receipt-header pre {
+            white-space: pre
+        }
+
         .receipt-body {
             text-align: left;
         }
@@ -135,16 +139,16 @@ $receiptData = $shoppingCart->checkout();
     <div class="paper-slip">
         <div class="receipt-header">
             <pre>
-    __________
-   /          /|
- /__________/  |
- |________ |   |
- /_____  /||   |
-|".___."| ||   |
-|_______|/ |   |
- || .___."||  /
+       __________
+     /          /|
+   /__________/  |
+   |________ |   |
+   /_____  /||   |
+  |".___."| ||   |
+  |_______|/ |   |
+  || .___."||  /
  ||_______|| /
- |_________|/
+||________|/
             </pre>
             <h1 class="receipt-title">RECORDS ON TIME</h1>
             <p>=========================================</p>
