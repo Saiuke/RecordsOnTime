@@ -7,7 +7,7 @@ use ElectronicItemType;
 /**
  * Class Console
  */
-class Console extends ElectronicItem
+final class Console extends ElectronicItem
 {
     public function __construct(string $name, string $description, int $price, array $extras)
     {

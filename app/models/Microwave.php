@@ -8,7 +8,7 @@ use ElectronicItemType;
  * Class Microwave
  * @package Shop\Products
  */
-class Microwave extends ElectronicItem
+final class Microwave extends ElectronicItem
 {
     public function __construct(string $name, string $description, int $price)
     {

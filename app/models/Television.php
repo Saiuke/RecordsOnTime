@@ -8,7 +8,7 @@ use ElectronicItemType;
  * Class Television
  * @package Shop\Products
  */
-class Television extends ElectronicItem
+final class Television extends ElectronicItem
 {
     public function __construct(string $name, string $description, int $price, array $extras)
     {
